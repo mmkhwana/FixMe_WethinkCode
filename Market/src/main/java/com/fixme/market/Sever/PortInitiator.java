@@ -99,6 +99,11 @@ public class PortInitiator implements Runnable
                         System.out.println("\n************ SELLING REQUEST ************");
 
                         controller.ProcessSell(Integer.parseInt(keys.get(53)), keys.get(30), Integer.parseInt(keys.get(35)), Integer.parseInt(keys.get(40)));
+                        ArrayList<String> market = Db.getInstruments();
+                        for(int i = 0; i < market.size(); i++)
+                        {
+                            System.out.println(market.get(i));
+                        }
                     }
                 } catch (IOException e) {
                     e.printStackTrace();

@@ -196,8 +196,7 @@ public class Db {
             }
             catch (SQLException e)
             {
-               // System.out.println("We do not have that instrument in stock");
-               // int x = InsertValues(instrType_, price_, quantity_);
+                System.out.println("We do not have that instrument in stock");
                 System.out.println(e.getStackTrace() + "\n" + e.getMessage());
             }
         }
